@@ -92,7 +92,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="09.html">9. 대표차트에 레전드 체크박스 옵션을 추가하고 차트 전체에 반영되도록 하기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="10.html">10. 대표차트에 레전드 체크박스 옵션을 추가하고 차트 전체에 반영되도록 하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10.html">10. Congratulations</a></li>
 </ul>
 
             
@@ -167,21 +167,33 @@
 <div class="section" id="raw-data">
 <h2>8.2. 라인-컬럼 차트 추가를 위한 raw data 가공하기<a class="headerlink" href="#raw-data" title="제목 주소">¶</a></h2>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>var data = {
-    categories: [&#39;O&#39;, &#39;A&#39;, &#39;B&#39;, &#39;AB&#39;],
-    series: [
-        {
-            name: &#39;남자&#39;,
-            data: [164350, 207708, 162275, 69444]
-        },
-        {
-            name: &#39;여자&#39;,
-            data: [69846, 84416, 68453, 28708]
-        },
-        {
-            name: &#39;모두&#39;,
-            data: [234196, 292124, 230728, 98152]
-        }
-    ]
+    categories: [&#39;남자&#39;, &#39;여자&#39; , &#39;모두&#39;],
+    series: {
+        column: [
+            {
+                name: &#39;O&#39;,
+                data: [164350, 69846, 234196]
+            },
+            {
+                name: &#39;A&#39;,
+                data: [207708, 84416, 292124]
+            },
+            {
+                name: &#39;B&#39;,
+                data: [162275, 68453, 230728]
+            },
+            {
+                name: &#39;AB&#39;,
+                data: [69444, 28708, 98152]
+            },
+        ],
+        line: [
+            {
+                name: &#39;Average&#39;,
+                data: [150944, 62855, 213800]
+            }
+        ]
+    }
 };
 </pre></div>
 </div>
